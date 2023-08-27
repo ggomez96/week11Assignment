@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-center"><!--center everything-->
+    <div>
+        <h1>TIC TAC TOE</h1>
+        <p>Click a box to start the game</p>
+        <h2>Player x turn</h2>
+
+
+
+        <div class="container" id="board"> <!--all margin set to 5-->
+            <!--first row of cells-->
+                <div class="x-hover" id="square" data-index="1"></div> <!--data index is just giving each square a index 1-9-->
+                <div class="col" id="square" data-index="2"></div>
+                <div class="col" id="square" data-index="3"></div>
+           <!--second row of cells-->
+                <div class="col" id="square" data-index="4"></div>
+                <div class="col" id="square" data-index="5"></div>
+                <div class="col" id="square" data-index=6></div>
+            <!--third row of cells-->
+                <div class="col" id="square" data-index="7"></div>
+                <div class="col" id="square" data-index="8"></div>
+                <div class="col" id="square" data-index="9"></div>
+        </div>
+
+
+
+        <div class="winning-message-screen" id="winningMessage"><!--winning screen-->
+            <h2>Winner is: </h2>
+            <button id="restartBtn">Restart</button>
+        </div>
+       
+
+
+
+
+
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

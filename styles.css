@@ -1,0 +1,32 @@
+#square {  /*the cell boxes*/
+    width: 100px;
+    height: 100px;
+    background-color: rgba(184, 183, 183, 0.582);
+    border: solid 2px black;
+    box-sizing:border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: 100px 100px 100px; 
+    grid-template-rows: 100px 100px 100px;
+    margin-bottom: 5px;
+}
+
+body { /* centering the box using flex, then changing the direction and centering*/
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+#winningMessage {
+    text-align: center;
+    padding: 50px;
+    width: 50%;
+}
+
+#restartBtn {
+    background-color: rgba(65, 64, 64, 0.514);
+}
